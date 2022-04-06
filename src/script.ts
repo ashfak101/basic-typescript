@@ -140,11 +140,38 @@ console.log(calculation(5,6,'minus'))
 
 
 // TypeScript Class
- class  Player {
+//  class  Player {
 
-    name:string;
-    age:number;
-    country:string;
+//     name:string;
+//     age:number;
+//     country:string;
+//      constructor(n:string,a:number,c:string) {
+//          this.name=n;
+//          this.age=a;
+//          this.country=c;
+//      }
+     
+     
+//      play(){
+//          console.log(`${this.name} from ${this.country} is playing`)
+//      }
+//  }
+
+//  const mashrafi = new Player('Mashrafi',40,'Bangladesh')
+//  const sakib = new Player('Sakib Ali',39,'Bangladesh')
+// console.log(sakib.name)
+//  const players: Player[]=[]
+
+//  players.push(sakib,mashrafi)
+
+
+//  console.log(players);
+// Access Modifiers
+class  Player {
+
+   private name:string;
+   public age:number;
+   public country:string;
      constructor(n:string,a:number,c:string) {
          this.name=n;
          this.age=a;
@@ -158,12 +185,15 @@ console.log(calculation(5,6,'minus'))
  }
 
  const mashrafi = new Player('Mashrafi',40,'Bangladesh')
- const sakib = new Player('sakib',39,'Bangladesh')
+ const sakib = new Player('Sakib Ali',39,'Bangladesh')
 
+ sakib.name="Mashrafi";
+ sakib.age =40;
+console.log(sakib.name)
+console.log(sakib.age)
  const players: Player[]=[]
 
  players.push(sakib,mashrafi)
 
 
  console.log(players);
- 
