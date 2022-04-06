@@ -123,3 +123,17 @@ const userDetails =(id:stringOrNum,
      console.log(`Hello ${user.age >50 ? "Sir": "Mr"}${user.name}`);
      
  }   
+//  function signature
+
+let calculation:(x:number,y:number,z:string) =>number;  
+
+calculation=(a:number,b:number,c:string)=>{
+    if(c==='add'){
+        return a+b;
+    }
+    else{
+        return a-b
+    }    
+        
+}
+console.log(calculation(5,6,'minus'))
