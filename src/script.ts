@@ -67,3 +67,27 @@ let d:(string | number | boolean)[]=[]
 d.push('Ashfakul')
 d.push(true,4,'Rahi')
 console.log(d)
+
+
+// Dynamic type
+// let e: any;
+
+
+// e=5;
+// e='Ashfakul';
+
+let e: any[]=[];
+
+e.push("bangladesh")
+
+// object
+let f:{
+    name:any,
+    age:any
+}
+        f={
+            name:'bangladesh',
+            age:true
+
+        }
+console.log(f)
