@@ -77,3 +77,30 @@ const userDetails = (id, user) => {
 const sayHello = (user) => {
     console.log(`Hello ${user.age > 50 ? "Sir" : "Mr"}${user.name}`);
 };
+//  function signature
+let calculation;
+calculation = (a, b, c) => {
+    if (c === 'add') {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
+};
+console.log(calculation(5, 6, 'minus'));
+// TypeScript Class
+class Player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
+}
+const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
+const sakib = new Player('sakib', 39, 'Bangladesh');
+const players = [];
+players.push(sakib, mashrafi);
+console.log(players);
