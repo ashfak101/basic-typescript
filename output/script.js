@@ -5,7 +5,7 @@ const add = (num1, num2) => {
     return num1 + num2;
 };
 console.log(add(2, 5));
-let playerName = 'AShraful';
+let playerName = 'Ashraful';
 let age = 35;
 console.log(playerName);
 console.log(age);
@@ -29,3 +29,19 @@ let person = {
 };
 person.age = 45;
 console.log(person);
+const arr1 = [];
+arr1.push('apple');
+arr1.push('banana');
+arr1.push('35');
+arr1.push('true');
+console.log(arr1);
+// Array is certain type of object
+let c;
+c = [1, 2, 3];
+let a;
+let b;
+// array
+let d = [];
+d.push('Ashfakul');
+d.push(true, 4, 'Rahi');
+console.log(d);

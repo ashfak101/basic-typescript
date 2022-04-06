@@ -6,7 +6,7 @@ const add =(num1:number,num2:number):number=>{
 }
 
 console.log(add(2,5));
-let playerName ='AShraful'
+let playerName ='Ashraful'
 let age = 35
 console.log(playerName);
 console.log(age)
@@ -42,3 +42,28 @@ let person={
 person.age = 45;
 
 console.log(person)
+
+
+const arr1:string[]=[]
+
+arr1.push('apple')
+arr1.push('banana')
+arr1.push('35')
+arr1.push('true')
+console.log(arr1)
+
+// Array is certain type of object
+let c: object;
+
+c=[1,2,3];
+ 
+let a:string;
+let b: number;
+
+// array
+
+let d:(string | number | boolean)[]=[]
+
+d.push('Ashfakul')
+d.push(true,4,'Rahi')
+console.log(d)
