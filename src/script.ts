@@ -91,3 +91,22 @@ let f:{
 
         }
 console.log(f)
+
+// function
+
+let myFunction:Function;
+
+myFunction=()=>{
+    console.log('hello world')
+}
+
+// here c is optional perameter  
+const myFunc =(a:string,b:string,c:string ='true')=>{
+    // console.log(c)
+    // console.log(`Hello ${a}${b}`)
+
+    // return type string
+    return a+b
+}
+
+myFunc('A','B','false');

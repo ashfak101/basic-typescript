@@ -58,3 +58,16 @@ f = {
     age: true
 };
 console.log(f);
+// function
+let myFunction;
+myFunction = () => {
+    console.log('hello world');
+};
+// here c is optional perameter  
+const myFunc = (a, b, c = 'true') => {
+    // console.log(c)
+    // console.log(`Hello ${a}${b}`)
+    // return type string
+    return a + b;
+};
+myFunc('A', 'B', 'false');
