@@ -110,7 +110,8 @@ console.log(calculation(5, 6, 'minus'));
 //  console.log(players);
 // Access Modifiers
 const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
-const sakib = new Player('Sakib Ali', 39, 'Bangladesh');
+let sakib;
+sakib = new Player('Sakib Ali', 39, 'Bangladesh');
 //  sakib.name="Mashrafi";
 //  sakib.age =40;
 // console.log(sakib.name)
@@ -118,4 +119,17 @@ const sakib = new Player('Sakib Ali', 39, 'Bangladesh');
 const players = [];
 players.push(sakib, mashrafi);
 console.log(players);
-//  system module
+function drawRectangle(options) {
+    let width = options.width;
+    let length = options.length;
+}
+// drawRectangle({
+//    width:30,
+//    length:20
+// })
+let threeDoptions = {
+    width: 30,
+    length: 20,
+    height: 10
+};
+drawRectangle(threeDoptions);

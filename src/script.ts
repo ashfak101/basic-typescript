@@ -1,4 +1,5 @@
 import {Player} from './classes/Players.js';
+import { isPlayer } from './interfaces/isPlayer.js';
 const country = "bangladesh";
 console.log(country)
 const add =(num1:number,num2:number):number=>{
@@ -170,13 +171,15 @@ console.log(calculation(5,6,'minus'))
 
 
  const mashrafi = new Player('Mashrafi',40,'Bangladesh')
- const sakib = new Player('Sakib Ali',39,'Bangladesh')
+
+let sakib:isPlayer
+sakib = new Player('Sakib Ali',39,'Bangladesh')
 
 //  sakib.name="Mashrafi";
 //  sakib.age =40;
 // console.log(sakib.name)
 // console.log(sakib.age)
- const players: Player[]=[]
+ const players: isPlayer[]=[]
 
  players.push(sakib,mashrafi)
 
@@ -184,3 +187,29 @@ console.log(calculation(5,6,'minus'))
  console.log(players);
 
 //  system module
+
+
+
+
+// Interface object
+
+interface RectangleOptions{
+    width : number;
+    length:number;
+}
+function drawRectangle(options:RectangleOptions){
+    let width =options.width;
+    let length = options.length
+}    
+
+// drawRectangle({
+//    width:30,
+//    length:20
+// })
+
+let threeDoptions={
+    width:30,
+    length:20,
+    height:10
+ }
+drawRectangle(threeDoptions)
