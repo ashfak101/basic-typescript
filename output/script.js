@@ -1,4 +1,4 @@
-"use strict";
+import { Player } from './classes/Players.js';
 const country = "bangladesh";
 console.log(country);
 const add = (num1, num2) => {
@@ -109,22 +109,13 @@ console.log(calculation(5, 6, 'minus'));
 //  players.push(sakib,mashrafi)
 //  console.log(players);
 // Access Modifiers
-class Player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        console.log(`${this.name} from ${this.country} is playing`);
-    }
-}
 const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
 const sakib = new Player('Sakib Ali', 39, 'Bangladesh');
-sakib.name = "Mashrafi";
-sakib.age = 40;
-console.log(sakib.name);
-console.log(sakib.age);
+//  sakib.name="Mashrafi";
+//  sakib.age =40;
+// console.log(sakib.name)
+// console.log(sakib.age)
 const players = [];
 players.push(sakib, mashrafi);
 console.log(players);
+//  system module
