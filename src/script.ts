@@ -269,3 +269,11 @@ const response1: APIResponse<string>={
     data:'test'
 }
 console.log(response1)
+
+
+// TUPLES
+
+let l= [3,'hello',{p:2}]
+
+
+let j:[number,string,object]=[4,'world',{t:1}];

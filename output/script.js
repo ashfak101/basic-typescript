@@ -174,3 +174,6 @@ const response1 = {
     data: 'test'
 };
 console.log(response1);
+// TUPLES
+let l = [3, 'hello', { p: 2 }];
+let j = [4, 'world', { t: 1 }];
