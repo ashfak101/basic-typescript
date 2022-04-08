@@ -145,12 +145,32 @@ let user = addID({
 });
 // let user='Mashrafi'
 console.log(user);
+//  Generics in Interface
+// interface APIResponse <T>{
+//     status:number;
+//     type:string;
+//     data:object;
+// }
+// const response1: APIResponse<object> ={
+//     status:200,
+//     type: 'Ok',
+//     data:{
+//         name:'Test',
+//         something: 300
+//     }
+// }
+// ENUMS
+var ResponseType;
+(function (ResponseType) {
+    ResponseType[ResponseType["SUCCESS"] = 0] = "SUCCESS";
+    ResponseType[ResponseType["FAILURE"] = 1] = "FAILURE";
+    ResponseType[ResponseType["UNAUTHENTICATED"] = 2] = "UNAUTHENTICATED";
+    ResponseType[ResponseType["FORBIDDEN"] = 3] = "FORBIDDEN";
+})(ResponseType || (ResponseType = {}));
+;
 const response1 = {
     status: 200,
-    type: 'Ok',
-    data: {
-        name: 'Test',
-        something: 300
-    }
+    type: ResponseType.SUCCESS,
+    data: 'test'
 };
 console.log(response1);

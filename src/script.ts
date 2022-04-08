@@ -238,19 +238,34 @@ console.log(user);
 
 //  Generics in Interface
 
-interface APIResponse <T>{
+// interface APIResponse <T>{
+//     status:number;
+//     type:string;
+//     data:object;
+// }
+// const response1: APIResponse<object> ={
+//     status:200,
+//     type: 'Ok',
+//     data:{
+//         name:'Test',
+//         something: 300
+//     }
+// }
+
+
+// ENUMS
+
+
+enum ResponseType {SUCCESS,FAILURE,UNAUTHENTICATED,FORBIDDEN};
+interface APIResponse<T>{
     status:number;
-    type:string;
-    data:object;
+    type:ResponseType;
+    data:T;
 }
-const response1: APIResponse<object> ={
+
+const response1: APIResponse<string>={
     status:200,
-    type: 'Ok',
-    data:{
-        name:'Test',
-        something: 300
-    }
+    type:ResponseType.SUCCESS,
+    data:'test'
 }
-
-
 console.log(response1)
