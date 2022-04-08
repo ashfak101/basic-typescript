@@ -213,3 +213,44 @@ let threeDoptions={
     height:10
  }
 drawRectangle(threeDoptions)
+
+// Generics
+
+const addID = <T extends {
+    name:string,
+    age:number,
+    country:string
+}>(obj:T)=>{
+    let id =Math.floor(Math.random()*100);
+    return{...obj,id};
+};
+
+let user =addID({
+    name :'Mashrafi',
+    age :40,
+    country:'bangladesh'
+})
+
+
+// let user='Mashrafi'
+console.log(user);
+
+
+//  Generics in Interface
+
+interface APIResponse <T>{
+    status:number;
+    type:string;
+    data:object;
+}
+const response1: APIResponse<object> ={
+    status:200,
+    type: 'Ok',
+    data:{
+        name:'Test',
+        something: 300
+    }
+}
+
+
+console.log(response1)
