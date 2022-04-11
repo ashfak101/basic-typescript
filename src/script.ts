@@ -20,16 +20,16 @@ console.log(multiply(4,5));
 
 // array
 
-let fruits =['apple','banana','orange']
+// let fruits =['apple','banana','orange']
 
-fruits.push("mango")
+// fruits.push("mango")
 
-console.log(fruits);
+// console.log(fruits);
 
-let mixed = ["apple",34,true]
+// let mixed = ["apple",34,true]
 
-mixed.push(false)
-console.log(mixed);
+// mixed.push(false)
+// console.log(mixed);
 
 
 
